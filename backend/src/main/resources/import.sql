@@ -46,3 +46,12 @@ INSERT INTO tb_lesson_done (lesson_id, user_id, offer_id) VALUES (2, 1, 1);
 
 INSERT INTO tb_deliver (uri, moment, status, feedback, user_id, offer_id, lesson_id) VALUES ('link', TIMESTAMP WITH TIME ZONE '2020-07-13T20:50:07.12345Z', 0, '', 1, 1, 1);
 
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('OI', TIMESTAMP WITH TIME ZONE '2020-07-13T20:50:07.12345Z', true, 'Route', 1);
+
+
+
+
+
+
+
+
