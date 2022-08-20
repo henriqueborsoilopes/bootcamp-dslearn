@@ -82,10 +82,6 @@ public class User implements Serializable {
 		return roles;
 	}
 
-	public void setRoles(Set<Role> roles) {
-		this.roles = roles;
-	}
-
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
