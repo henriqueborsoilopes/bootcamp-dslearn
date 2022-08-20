@@ -47,14 +47,15 @@ public class Deliver implements Serializable {
 		super();
 	}
 
-	public Deliver(Long id, String uri, Instant moment, DeliverStatus status, String feedback, Enrollment enrollment,
+	public Deliver(Long id, String uri, Instant moment, DeliverStatus status, String feedback, User student, Offer offer,
 			Lesson lesson) {
 		this.id = id;
 		this.uri = uri;
 		this.moment = moment;
 		this.status = status;
 		this.feedback = feedback;
-		this.enrollment = enrollment;
+		this.enrollment.setStudent(student);
+		this.enrollment.setOffer(offer);
 		this.lesson = lesson;
 	}
 

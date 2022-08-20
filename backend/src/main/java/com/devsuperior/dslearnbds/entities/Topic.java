@@ -66,7 +66,8 @@ public class Topic implements Serializable {
 		super();
 	}
 
-	public Topic(Long id, String title, String body, Instant moment, Lesson lesson, Offer offer, User author) {
+	public Topic(Long id, String title, String body, Instant moment, Lesson lesson, Offer offer, User author,
+			Reply answer) {
 		this.id = id;
 		this.title = title;
 		this.body = body;
@@ -74,6 +75,7 @@ public class Topic implements Serializable {
 		this.lesson = lesson;
 		this.offer = offer;
 		this.author = author;
+		this.answer = answer;
 	}
 
 	public Long getId() {
