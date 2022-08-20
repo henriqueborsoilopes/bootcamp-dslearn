@@ -48,10 +48,12 @@ INSERT INTO tb_deliver (uri, moment, status, feedback, user_id, offer_id, lesson
 
 INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('OI', TIMESTAMP WITH TIME ZONE '2020-07-13T20:50:07.12345Z', true, 'Route', 1);
 
+INSERT INTO tb_topic (title, body, moment, lesson_id, offer_id, author_id) VALUES ('OI', 'OI', TIMESTAMP WITH TIME ZONE '2020-07-13T20:50:07.12345Z', 1, 1, 1);
 
+INSERT INTO tb_topic_likes (like_id, user_id) VALUES (1, 1);
 
+INSERT INTO tb_reply (body, moment, topic_id, author_id) VALUES ('OI', TIMESTAMP WITH TIME ZONE '2020-07-13T20:50:07.12345Z', 1, 1);
 
-
-
+INSERT INTO tb_reply_likes (reply_id, user_id) VALUES (1, 1);
 
 
